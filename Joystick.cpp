@@ -92,7 +92,7 @@ int Joystick::calcRadio() {
   }
   return radio;
 }
-int Joystick::Motor_derecho() {
+int Joystick::MotorDerecho() {
   int cod = 0, angulo = 0;
 
   cod = calcCOD();
@@ -112,7 +112,7 @@ int Joystick::Motor_derecho() {
     return cod;
     }*/
 }
-int Joystick::Motor_izquierdo() {
+int Joystick::MotorIzquierdo() {
   int cod = 0, angulo = 0;
 
   cod = calcCOD();
@@ -143,10 +143,10 @@ int Joystick::valor() {
   cod = calcCOD();
   Serial.print("\t\tcodigo: ");
   Serial.println(cod);
-  codD = Motor_derecho();
+  codD = MotorDerecho();
   Serial.print("\t\tcodigo Derecho: ");
   Serial.println(codD);
-  codI = Motor_izquierdo();
+  codI = MotorIzquierdo();
   Serial.print("\t\tcodigo Izquierdo: ");
   Serial.println(codI);
 }
@@ -174,10 +174,10 @@ int Joystick::leer(int max, int codX, int codY, int sen) {
   cod = calcCOD();
   Serial.print("\t\tcodigo: ");
   Serial.println(cod);
-  codD = Motor_derecho();
+  codD = MotorDerecho();
   Serial.print("\t\tcodigo Derecho: ");
   Serial.println(codD);
-  codI = Motor_izquierdo();
+  codI = MotorIzquierdo();
   Serial.print("\t\tcodigo Izquierdo: ");
   Serial.println(codI);
 }

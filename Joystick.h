@@ -18,8 +18,8 @@ class Joystick{
     int getX();
     int getY();
     int calcRadio();
-    int Motor_derecho();
-    int Motor_izquierdo();
+    int MotorDerecho();
+    int MotorIzquierdo();
 
     //implcit declaration
     Joystick();
