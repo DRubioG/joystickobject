@@ -1,9 +1,9 @@
 #include <PS2X_lib.h>
 
-#include "Joystick.h"
+//#include "Joystick.h"
 
 //Joystick t(1024,3,2,50);
-Joystick k;
+//Joystick k;
 
 #define PS2_DAT        13  //14    
 #define PS2_CMD        11  //15
